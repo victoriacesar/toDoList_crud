@@ -6,7 +6,7 @@ window.onload = function () {
 
 const date = document.querySelector(".box__header__date");
 const message = document.querySelector(".warning_message");
-const dateToday = moment(new Date()).format("LL");
+const dateToday = moment(new Date()).format("L");
 const formatDate = capitalize(dateToday).join(" ");
 const addTask = document.querySelector(".btnAdd");
 const inputTask = document.querySelector("[taskInput]");
