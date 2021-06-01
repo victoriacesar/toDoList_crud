@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&family=Poppins:ital,wght@0,300;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header class="box__header">
+          <div>
+            <h1 class="box__header__h1">Hello, <span>Victoria</span></h1>
+            <p class="box__header__date">Terça, 01/Jun/2021</p>
+          </div>
+          <img
+            src="assets/img/perfil-quadrado"
+            alt="Profile photo"
+            class="box__header__pic"
+          />
+        </header>
+        <main class="box__main">
+          <div class="box__main__add">
+            <input
+              taskInput
+              type="text"
+              name="task"
+              id="task"
+              placeholder="Nova tarefa"
+              class="box__main__add__input"
+            />
+            <button class="btnAdd">+</button>
+          </div>
+          <p class="box__main__p">What's up for today?</p>
+          <div task-box></div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+    <script type="module" src="assets/js/app.js"></script>
+  </body>
+</html>

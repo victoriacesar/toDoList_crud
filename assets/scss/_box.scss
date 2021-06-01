@@ -1,0 +1,125 @@
+.box {
+  background-color: lavender;
+  width: 450px;
+  min-height: 550px;
+  border-radius: 3%;
+  padding: 20px;
+  position: relative;
+  color: $dark-grey;
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+
+  .btnAdd {
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    background-color: #8844ee;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__h1 {
+      font-family: $poppins;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+
+      span {
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+
+    &__date {
+      // text-transform: uppercase;
+      font-size: 0.9rem;
+      font-family: $lato;
+      display: inline-block;
+    }
+
+    &__pic {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  &__main {
+    border-top: 1px solid $purple;
+    margin-top: 2rem;
+
+    &__add {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid $purple;
+
+      &__input {
+        height: 30px;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        color: $dark-grey;
+
+        &::placeholder {
+          font-family: $lato;
+        }
+
+        &:focus {
+          border: 2px solid $purple;
+        }
+      }
+    }
+
+    &__p {
+      font-family: $poppins;
+      margin-top: 1rem;
+    }
+
+    &__card {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      margin-top: 0.5rem;
+      justify-content: space-between;
+      font-family: $lato;
+      color: $dark-grey;
+      border-radius: 8px;
+
+      &__info {
+        display: flex;
+
+        p.checked {
+          text-decoration: line-through;
+          font-style: italic;
+        }
+      }
+
+      &__icon {
+        #edit,
+        #close {
+          font-size: 20px;
+          padding: 5px;
+          background-color: lavender;
+          border-radius: 50%;
+          color: $dark-grey;
+          cursor: pointer;
+        }
+      }
+
+      .done {
+        margin-right: 10px;
+      }
+    }
+  }
+}

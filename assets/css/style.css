@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: lavender;
+  width: 450px;
+  min-height: 550px;
+  border-radius: 3%;
+  padding: 20px;
+  position: relative;
+  color: #25221e;
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+}
+.box .btnAdd {
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  background-color: #8844ee;
+  color: #fff;
+  cursor: pointer;
+}
+.box__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box__header__h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.box__header__h1 span {
+  font-weight: 600;
+  font-style: italic;
+}
+.box__header__date {
+  font-size: 0.9rem;
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+}
+.box__header__pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.box__main {
+  border-top: 1px solid #8844ee;
+  margin-top: 2rem;
+}
+.box__main__add {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #8844ee;
+}
+.box__main__add__input {
+  height: 30px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: #25221e;
+}
+.box__main__add__input::placeholder {
+  font-family: "Lato", sans-serif;
+}
+.box__main__add__input:focus {
+  border: 2px solid #8844ee;
+}
+.box__main__p {
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+}
+.box__main__card {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  color: #25221e;
+  border-radius: 8px;
+}
+.box__main__card__info {
+  display: flex;
+}
+.box__main__card__info p.checked {
+  text-decoration: line-through;
+  font-style: italic;
+}
+.box__main__card__icon #edit,
+.box__main__card__icon #close {
+  font-size: 20px;
+  padding: 5px;
+  background-color: lavender;
+  border-radius: 50%;
+  color: #25221e;
+  cursor: pointer;
+}
+.box__main__card .done {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

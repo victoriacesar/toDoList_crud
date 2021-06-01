@@ -1,0 +1,11 @@
+$lato: "Lato", sans-serif;
+$poppins: "Poppins", sans-serif;
+$white: #fff;
+$dark-grey: #25221e;
+$purple: #8844ee;
+
+* {
+  box-sizing: border-box;
+}
+
+@import "container", "box";
