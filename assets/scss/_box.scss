@@ -54,6 +54,18 @@
     border-top: 1px solid $purple;
     margin-top: 2rem;
 
+    .warning_message {
+      margin-top: 5px;
+      // display: none;
+      font-family: $lato;
+      color: red;
+      display: none;
+
+      &.show {
+        display: block;
+      }
+    }
+
     &__add {
       padding: 10px 0;
       display: flex;

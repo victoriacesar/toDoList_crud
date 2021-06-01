@@ -5,6 +5,7 @@ window.onload = function () {
 };
 
 const date = document.querySelector(".box__header__date");
+const message = document.querySelector(".warning_message");
 const dateToday = moment(new Date()).format("LL");
 const formatDate = capitalize(dateToday).join(" ");
 const addTask = document.querySelector(".btnAdd");
@@ -39,7 +40,13 @@ const newTask = () => {
   </div> 
   `;
 
-  taskBox.innerHTML += task;
+  if (inputValue) {
+    taskBox.innerHTML += task;
+    message.classList.remove("show");
+  } else if (inputValue === "") {
+    message.classList.add("show");
+  }
+
   inputValue = "";
 };
 

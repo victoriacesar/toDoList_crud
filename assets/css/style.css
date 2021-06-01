@@ -59,6 +59,15 @@
   border-top: 1px solid #8844ee;
   margin-top: 2rem;
 }
+.box__main .warning_message {
+  margin-top: 5px;
+  font-family: "Lato", sans-serif;
+  color: red;
+  display: none;
+}
+.box__main .warning_message.show {
+  display: block;
+}
 .box__main__add {
   padding: 10px 0;
   display: flex;
