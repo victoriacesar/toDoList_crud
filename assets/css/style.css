@@ -107,10 +107,24 @@
 }
 .box__main__card__info {
   display: flex;
+  align-items: center;
 }
-.box__main__card__info p.checked {
+.box__main__card__info .content.checked {
   text-decoration: line-through;
   font-style: italic;
+}
+.box__main__card__info .checkBox {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  margin-right: 10px;
+}
+.box__main__card__info .checkBox:hover {
+  background-color: lawngreen;
+}
+.box__main__card__info .checkBox.checkedBox {
+  background-color: lawngreen;
 }
 .box__main__card__icon #edit,
 .box__main__card__icon #close {
