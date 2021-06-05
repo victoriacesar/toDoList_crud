@@ -1,4 +1,4 @@
-<h1 align="center"><em>CRUD</hm> - To-Do List</h1>
+<h1 align="center"><em>CRUD</em> - To-Do List</h1>
 <p align="center">It's a to-do list for the day.</p>
 
 <p align="left">
