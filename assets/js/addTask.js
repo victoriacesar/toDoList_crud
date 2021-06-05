@@ -1,7 +1,8 @@
 import Card from "./components/Card.js";
 import taskDelete from "./deleteTask.js";
 import taskFinished from "./taskFinished.js";
-import warningMessage from "./components/WarningMessage.js";
+import editTask from "./editTask.js";
+import saveTask from "./saveTask.js";
 
 const addTask = document.querySelector(".btnAdd");
 const inputTask = document.querySelector("[taskInput]");
@@ -39,8 +40,10 @@ addTask.addEventListener("click", () => {
     return;
   }
   inputTask.value = "";
-  taskFinished();
   taskDelete();
+  taskFinished();
+  editTask();
+  saveTask();
 });
 
 const saveLocalStorage = (key, object) => {

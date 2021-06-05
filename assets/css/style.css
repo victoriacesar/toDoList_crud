@@ -31,6 +31,9 @@
   color: #fff;
   cursor: pointer;
 }
+.box .btnAdd:focus {
+  box-shadow: 0px 0px 0px 2px white inset;
+}
 .box__header {
   display: flex;
   align-items: center;
@@ -61,6 +64,7 @@
 }
 .box__main .warning_message {
   margin-top: 5px;
+  display: none;
   font-family: "Lato", sans-serif;
   color: red;
   display: none;
@@ -113,6 +117,21 @@
   text-decoration: line-through;
   font-style: italic;
 }
+.box__main__card__info .content.hidden {
+  display: none;
+}
+.box__main__card__info .editInput {
+  width: 80%;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  padding: 5px;
+  color: #25221e;
+  display: none;
+}
+.box__main__card__info .editInput.show {
+  display: inline-block;
+}
 .box__main__card__info .checkBox {
   width: 10px;
   height: 10px;
@@ -127,6 +146,7 @@
   background-color: lawngreen;
 }
 .box__main__card__icon #edit,
+.box__main__card__icon #done,
 .box__main__card__icon #close {
   font-size: 20px;
   padding: 5px;
@@ -135,8 +155,28 @@
   color: #25221e;
   cursor: pointer;
 }
+.box__main__card__icon #done {
+  display: none;
+}
+.box__main__card__icon #done.show {
+  display: inline-block;
+}
+.box__main__card__icon #edit.hidden {
+  display: none;
+}
 .box__main__card .done {
   margin-right: 10px;
+}
+
+@media (min-width: 375px) {
+  .container {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
