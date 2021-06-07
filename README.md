@@ -26,6 +26,14 @@ The following technologies were used in this project:
 <p><strong>About the CSS:</strong> I used the CSS's selectors, classes, and IDs to create the layout and interface of the project.</p>
 <p><strong>About the JavaScript:</strong> With the JS I transformed the application dynamic, the input creates a task to do and the buttons adds and removes the elements from the list. Also implemented the save on local storage so once the user leaves the page and goes back their task's stills continues in the page.</p>
 
+### Clone
+
+<p>To clone locally the project in development mode you must:</p>
+<p style="padding: 10px; background-color: #DCDCDC;">
+git clone https://github.com/victoriacesar/toDoList_crud.git
+open the file index.html in your browser
+</p>
+
 ### Author
 
 <a href="https://github.com/victoriacesar" rel="nofollow">
