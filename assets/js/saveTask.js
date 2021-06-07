@@ -8,16 +8,21 @@ const saveBtn = () => {
     save.addEventListener("click", () => {
       const tasks = JSON.parse(localStorage.getItem("tasks"));
       const inputValue = editInput[id].value;
-      tasks[id].content = inputValue;
 
-      localStorage.setItem("tasks", JSON.stringify(tasks));
+      if (inputValue.trim()) {
+        tasks[id].content = inputValue;
 
-      pContent[id].innerText = inputValue;
+        localStorage.setItem("tasks", JSON.stringify(tasks));
 
-      save.classList.remove("show");
-      editBtn[id].classList.remove("hidden");
-      pContent[id].classList.remove("hidden");
-      editInput[id].classList.remove("show");
+        pContent[id].innerText = inputValue;
+
+        save.classList.remove("show");
+        editBtn[id].classList.remove("hidden");
+        pContent[id].classList.remove("hidden");
+        editInput[id].classList.remove("show");
+      } else {
+        return;
+      }
     });
   });
 };

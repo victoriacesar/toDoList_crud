@@ -3,7 +3,7 @@ const Card = (card) => {
   <div class="box__main__card">
     <div class="box__main__card__info">
       <div class="checkBox"></div>
-      <input type="text" class="editInput" placeholder="${card.content}">
+      <input type="text" class="editInput" value="${card.content}">
       <p class="content">${card.content}</p>
     </div>
     <div class="box__main__card__icon">
