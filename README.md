@@ -29,10 +29,9 @@ The following technologies were used in this project:
 ### Clone
 
 <p>To clone locally the project in development mode you must:</p>
-```
-git clone https://github.com/victoriacesar/toDoList_crud.git
-open the file index.html in your browser
-```
+
+<p>git clone https://github.com/victoriacesar/toDoList_crud.git</p>
+<p>open the file index.html in your browser</p>
 
 ### Author
 
